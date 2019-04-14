@@ -3,83 +3,24 @@
 
 <head>
     <title>kino.by</title>
-    <style>
-        body {
-            background: url('iron1.jpg') 50% 0 no-repeat #000;
-        }
-
-        .name {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 35px
-        }
-
-        .menu {
-            background-color: rgba(43, 43, 43, 1);
-            color: white
-        }
-
-        .box {
-            background-color: rgba(8, 7, 7, 0.8);
-            height: 400px;
-        }
-
-        .dop {
-            color: darkgray;
-            font-size: 13px
-        }
-
-        table {
-            margin: auto;
-            padding: 10px;
-            font-size: 17px;
-            text-align: left;
-            color: white;
-
-        }
-
-        A {
-            color: white;
-        }
-
-        A:visited {
-            color: red;
-        }
-
-        A:active {
-            color: slategray;
-        }
-
-        tr {
-            vertical-align: top;
-        }
-
-        td {
-            color: white;
-            vertical-align: top;
-            padding: 10px;
-        }
-
-        img {
-            margin-right: 10px;
-        }
-    </style>
-
+    <link href="table.css" rel="stylesheet">
     <link rel="icon" href="movie.png" type="image/png">
 </head>
 
 <body>
-    <table border="0" cellpadding="0" cellspacing="0" width="70%">
+    <table border="0" cellpadding="0" cellspacing="0">
         <tr>
-            <td colspan="2" class="name" style="color: white">
-                KINO.BY
+            <td colspan="2" class="name">
+                <h4>kino.by</h4>
+                
             </td>
         </tr>
         <tr>
-            <td></td> <td width="auto"><h3>Смотреть онлайн</h3></td>
+            <td></td> <td><h3 class="online">Смотреть онлайн</h3></td>
         </tr>
         <tr>
-            <td rowspan="3" class="menu" width="60px" link="white" style="vertical-align: top;">
-                <ul style="color: white">
+            <td rowspan="3" class="menu" link="white">
+                <ul class="colorWhite">
                     <li><a href="https://kinogo.by/film/boeviki/" title="Боевики">Боевики</a></li>
                     <li><a href="https://kinogo.by/tags/вестерн/" title="Вестерны">Вестерны</a></li>
                     <li><a href="https://kinogo.by/film/voennye/" title="Военные">Военные</a></li>
@@ -102,14 +43,14 @@
                 <h3>
                     Скоро на сайте
                 </h3>
-                Стекло (2019) По половому признаку — Русский трейлер (2019)<video src="1.mp4" width="300px" controls="controls"
+                Стекло (2019) По половому признаку — Русский трейлер (2019)<video src="1.mp4"  controls="controls"
                     poster="1.jpg"></video><span class="dop">Фильм рассказывает о молодом адвокате Рут Бадер Гинзбург и
                     её борьбе за
                     равные права мужчин и женщин. Героиня преодолевает все трудности на пути, чтобы стать верховным
                     судьёй
                     США.</span>
                 <hr>
-                Тройная граница — Русский трейлер (2019)<video src="2.mp4" width="300px" controls="controls"
+                Тройная граница — Русский трейлер (2019)<video src="2.mp4"  controls="controls"
                     poster="2.jpg"></video> <span class="dop"> Пограничная зона между Парагваем, Аргентиной и Бразилией
                     считается раем для
                     организованной преступности, наркоторговцев и террористов. Долгие годы отряды специального
@@ -120,7 +61,7 @@
                     ушедших в отставку, чтобы провернуть авантюрную операцию. Он убеждает бывших коллег убить и ограбить
                     Лореа, тем самым обеспечив себе и своим семьям безбедную жизнь.</span>
                 <hr>
-                Проклятый дом — Русский трейлер (2019) <video src="3.mp4" width="300px" controls="controls"
+                Проклятый дом — Русский трейлер (2019) <video src="3.mp4"  controls="controls"
                     poster="3.jpg"></video><span class="dop">Отец с 12-летним сыном приезжают в сельский штат Вермонт,
                     чтобы восстановить
                     старый дом. Там они сталкиваются со злым духом прежней владелицы дома, и чем дальше продвигается
@@ -128,10 +69,10 @@
                     тем сильнее становится злобный призрак.</span>
                 <hr>
             </td>
-            <td class="box" width="auto">
+            <td class="box">
                 <h2><a href="https://www.youtube.com/watch?v=Ba7tM-SFysY>">Стекло (2019) смотреть</a></h2><br>
                 <p class="text"><a href="https://www.youtube.com/watch?v=Ba7tM-SFysY>"><img src="стекло.jpg"
-                            alt="стекло" width="210px" style=float:left></a>
+                            alt="стекло" class="floatLeft"></a>
                     Однажды Дэвид Данн обрел чрезвычайную уверенность в своем необычном призвании.
                     Мужчина стал единственным выжившим пассажиром поезда, разлетевшегося на куски.
                     Счастливчик понял, что обладает не просто особенной везучестью, а целым комплексом
@@ -140,27 +81,23 @@
                     субъекта и начал его преследовать. Причиной чрезмерной заинтересованности в живучем
                     человеке стала личная трагедия преследователя. Хрупкие кости являлись
                 </p>
-                <br>
-                <br>
-                <p class="dop">
+                <div class="dop">
                     Год выпуска: 2019<br>
                     Страна: США<br>
                     Жанр: Фантастика, Драма, Триллер<br>
                     Качество: WEB-DLRip<br>
                     Перевод: Звук с TS
                     Продолжительность: 129 мин. / 02:09<br>
-                    Премьера: 7 января 2019<br>
-                    <br>
-                    <br>
-                </p>
+                    Премьера: 7 января 2019
+                </div>
                 <hr>
             </td>
         </tr>
         <tr>
-            <td class="box" width="auto">
+            <td class="box">
                 <h2><a href="https://www.youtube.com/watch?v=IpO9ao3vTA4&t=1s">Круты. 1918 (2019) смотреть</a></h2>
                 <p class="text"> <a href="https://www.youtube.com/watch?v=IpO9ao3vTA4&t=1s"> <img src="крути.jpg"
-                            alt="крути" width="210px" style=float:left></a>
+                            alt="крути" class="floatLeft"></a>
                     Начало ХХ века было весьма трудным временем для украинцев. Но тогда они всё же смогли
                     получить
                     свою
@@ -174,27 +111,23 @@
                     которые
                     влюбились в одну девушку, и просто куча
                 </p>
-                <br>
-                <br>
-                <p class="dop">
+                <div class="dop">
                     Год выпуска: 2019<br>
                     Страна: Украина<br>
                     Жанр: Военный, Исторический<br>
                     Качество: WEB-DLRip<br>
                     Перевод: Оригинал<br>
                     Продолжительность: 110 мин. / 01:50<br>
-                    Премьера: 6 декабря 2018<br>
-                    <br>
-                    <br>
-                </p>
+                    Премьера: 6 декабря 2018
+                </div>
                 <hr>
             </td>
         </tr>
         <tr>
-            <td class="box" width="auto">
+            <td class="box">
                 <h2><a href="https://www.youtube.com/watch?v=VIksYxfll0M">В погоне за Бонни и Клайдом (2019) смотреть</a></h2>
-                </p> <a href="https://www.youtube.com/watch?v=VIksYxfll0M"><img src="в погоне.jpg" alt="в погоне"
-                        width="210px" style=float:left></a>
+                <p class="text"> <a href="https://www.youtube.com/watch?v=VIksYxfll0M"><img src="в погоне.jpg" alt="в погоне"
+                    class=" floatLeft"></a>
                 1934 год. Безумные преступники совершают грабежи и будоражат Америку смелыми налетами. Мелкие
                 воришки
                 поклоняются отчаянной парочке, которой удается ловко дурачить полицию и сбегать от облав.
@@ -207,19 +140,15 @@
                 бросив
                 вызов целому миру, чтобы выполнить
                 </p>
-                <br>
-                <br>
-                <p class="dop">
+                <div class="dop">
                     Год выпуска: 2019<br>
                     Страна: США<br>
                     Жанр: Детектив, Криминал<br>
                     Качество: WEB-DLRip<br>
                     Перевод: Дублированный<br>
                     Продолжительность: 132 мин. / 02:12<br>
-                    Премьера: 29 марта 2019<br>
-                    <br>
-                    <br>
-                </p>
+                    Премьера: 29 марта 2019
+                </div>
                 <hr>
             </td>
         </tr>

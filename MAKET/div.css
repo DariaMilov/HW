@@ -1,0 +1,95 @@
+body {
+    background: url('iron1.jpg') 50% 0 no-repeat #000;
+    margin: 0px;
+}
+
+div {
+    padding: 10px;
+    font-size: 17px;
+    text-align: left;
+    color: white;  
+}
+
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#container {
+    display: table;
+    padding: 0;
+}
+
+#leftSidebar {
+    background-color: rgba(43, 43, 43, 1);
+    color: white;
+    width: 300px;
+    height: auto;
+    display: table-cell;
+}
+
+#main {
+    background-color: rgba(8, 7, 7, 0.8);
+    height: auto;
+    margin-left: 10px;
+    display: table-cell;
+}
+
+#footer {
+    color: darkgray;
+    font-size: 13px;
+    height: auto;
+    margin: 0;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+#all {
+    width: 70%;
+    margin: auto;
+}
+
+.dop {
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.block {
+    min-height: 400px;
+}
+
+A {
+    color: white;
+}
+
+A:visited {
+    color: red;
+}
+
+A:active {
+    color: slategray;
+}
+
+img {
+    margin-right: 10px;
+    width:210px;
+    float:left;
+}
+
+h3
+{
+    height: 40px;   
+    background-color: rgba(8, 7, 7, 0.8);
+    width: 170px;
+    margin: 0 0 0 320px;
+}
+
+video[src$=".mp4"]
+{
+   width: 300px; 
+}
