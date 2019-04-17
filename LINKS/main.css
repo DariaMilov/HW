@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+a {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #777777;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 4px 0 4px;
+}
+
+.menu-main {
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-main ul {
+    padding: 0;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main a {
+    padding-right: 3px;
+}
+
+.menu-main a:hover {
+    color: red;
+}
+
+.menu-main a::after {
+    content: "|";
+    color: red;
+    font-size: 30px;
+    padding-left: 4px;
+}
+
+.menu-table {
+    list-style: none;
+    font-size: 18px;
+}
+
+.menu-table a:hover {
+    color: red;
+}
+
+.menu-table td:nth-of-type(even) {
+    background-color: red;
+    width: 1px;
+}
+
+.menu-span {
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+    color: red;
+}
+
+.menu-span a:hover {
+    color: red;
+}
+
+.menu-span a:after {
+    content: '\7C';
+    color: red;
+    font-size: 30px;
+    padding-left: 4px;
+}
+
+.menu-inline {
+    text-align: center;
+    margin: auto;
+}
+
+.menu-inline ul {
+    padding: 0;
+}
+
+.menu-inline li {
+    display: inline;
+}
+
+.menu-inline a {
+    background: white;
+}
+
+.menu-inline img {
+    height: 25px;
+    width: 3px;
+    vertical-align: bottom;    
+    padding-left: 4px;
+    margin-right: -8px;
+}
+
+.menu-inline a:hover {
+    color: red;
+}
+
+.menu-inline-block {
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    background: white;
+}
+
+.menu-inline-block a {
+    display: inline-block;
+    padding-right: 3px;
+    border-right: 3px solid red;
+}
+
+.menu-inline-block a:hover {
+    color: red;
+}
+
+.menu-inline-flex {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    background: white;
+}
+
+.menu-inline-flex a {
+    display: inline-flex;
+    background: url(red.png) repeat-y right;
+    padding-right: 6px;
+    padding-left: 0px;
+}
+
+.menu-inline-flex a:hover {
+    color: red;
+}
+
+.menu-float-left {
+    margin: auto;
+    width: fit-content;
+}
+
+.menu-float-left ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.menu-float-left li {
+    float: left;
+    padding: 0 3px 0 0;
+    background-color: red;
+}
+
+.menu-float-left a {
+    display: block;
+    background-color: white;
+}
+
+.menu-float-left a:hover {
+    color: red;
+}
+
+.menu-table-cell {
+    margin: auto;
+    background: white;
+    display: table;
+}
+
+.menu-table-cell a {
+    display: table-cell;
+    border-image: url(red.png) 27 fill repeat;
+    border-style: solid;
+    border-width: 0px 3px 0px 0px;
+}
+
+.menu-table-cell a:hover {
+    color: red;
+}

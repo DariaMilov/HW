@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>links</title>
+    <link href="main.css" rel="stylesheet">
+
+<body>
+
+    <div class="menu-main">
+        <ul>
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <!--Самый удобный способ из-за минимального колличесва действий-->
+    
+
+    <div class="menu-table">
+        <table align="center">
+            <tr>
+                <td><a href="">Work</a></td>
+                <td></td>
+                <td><a href="">About</a></td>
+                <td></td>
+                <td><a href="">Blog</a></td>
+                <td></td>
+                <td><a href="">Contact</a></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Так же прост в использовании при наличии однотипных цветовых разделителей-->
+
+    
+
+    <div class="menu-span">
+        <span><a href="">Work</a></span>
+        <span><a href="">About</a></span>
+        <span><a href="">Blog</a></span>
+        <span><a href="">Contact</a></span>
+    </div>
+    <!--Плюсом будет простота отбражения при изменениях контента-->
+    
+
+    <div class="menu-inline">
+        <ul>
+            <li><a href="">Work<img src="red.png"></a></li>
+            <li><a href="">About<img src="red.png"></a></li>
+            <li><a href="">Blog<img src="red.png"></a></li>
+            <li><a href="">Contact<img src="red.png"></a></li>
+        </ul>
+    </div>
+    <!--Самое неоптимальное решение, использование картинки в каждом эелемента меню
+        и потребность указания размером картинки либо изменять размер исходной картинки-->
+    
+
+    <div class="menu-inline-block">
+        <a href="">Work</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </div>
+    <!--Простота реализации меню и разделителя, оптитмально для нашего задания-->
+
+    <div class="menu-inline-flex">
+        <a href="">Work</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </div>
+    <!--Реализация аналогична предыдущему, но использование картинки для разделителей применимо
+    лишь при необходимости. Для нашего задания (одноцветный разделитель) оптимальнее использовать
+    border-color-->
+
+    <div class="menu-float-left">
+        <ul>
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <!--Простота реализации меню, но использование background-color для разделителей неоптимально-->
+    
+
+    <div class="menu-table-cell">
+        <a href="">Work</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </div>
+    <!--Простота реализации меню, но использование картинки для разделителей применимо
+    лишь при необходимости. Для нашего задания (одноцветный разделитель) оптимальнее использовать
+    border-color-->
+
+</body>
+
+</html>
