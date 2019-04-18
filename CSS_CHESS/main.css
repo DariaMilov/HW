@@ -8,30 +8,30 @@ table.CHESS td {
     border: solid gray 1px;
 }
 
-table.CHESS tr:nth-child(odd) td:nth-child(odd) {
+tr:nth-child(odd) td:nth-child(odd) {
     background-color: black;
 }
 
-table.CHESS tr:nth-child(even) td:nth-child(even) {
+tr:nth-child(even) td:nth-child(even) {
     background-color: black;
 }
 
 table.CHESS td:first-of-type {
-    background-color: green !important;
+    background-color: green;
     width: 25px;
 }
 
 table.CHESS td:last-of-type {
-    background-color: green !important;
+    background-color: green;
     width: 25px;
 }
 
 table.CHESS tr:first-of-type td {
-    background-color: green !important;
+    background-color: green;
     height: 25px;
 }
 
 table.CHESS tr:last-of-type td {
-    background-color: green !important;
+    background-color: green;
     height: 25px;
 }

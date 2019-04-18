@@ -10,6 +10,10 @@ a {
     padding: 0 4px 0 4px;
 }
 
+div {
+    min-height: 40px;
+}
+
 .menu-main {
     list-style: none;
     font-size: 18px;
@@ -32,11 +36,12 @@ a {
     color: red;
 }
 
-.menu-main a::after {
+.menu-main li:not(:last-child):after  {
     content: "|";
     color: red;
     font-size: 30px;
     padding-left: 4px;
+    font-weight: bold;
 }
 
 .menu-table {
@@ -48,9 +53,13 @@ a {
     color: red;
 }
 
-.menu-table td:nth-of-type(even) {
+.menu-table td:nth-of-type(even){
     background-color: red;
     width: 1px;
+}
+
+.menu-table td:last-of-type{
+    background-color: transparent;
 }
 
 .menu-span {
@@ -64,11 +73,12 @@ a {
     color: red;
 }
 
-.menu-span a:after {
+.menu-span span:not(:last-child):after {
     content: '\7C';
     color: red;
     font-size: 30px;
     padding-left: 4px;
+    font-weight: bold;
 }
 
 .menu-inline {
@@ -107,7 +117,7 @@ a {
     background: white;
 }
 
-.menu-inline-block a {
+.menu-inline-block a:not(:last-child) {
     display: inline-block;
     padding-right: 3px;
     border-right: 3px solid red;
@@ -124,7 +134,7 @@ a {
     background: white;
 }
 
-.menu-inline-flex a {
+.menu-inline-flex a:not(:last-child) {
     display: inline-flex;
     background: url(red.png) repeat-y right;
     padding-right: 6px;
@@ -152,6 +162,10 @@ a {
     background-color: red;
 }
 
+.menu-float-left li:last-of-type {
+    background-color: transparent;
+}
+
 .menu-float-left a {
     display: block;
     background-color: white;
@@ -172,6 +186,10 @@ a {
     border-image: url(red.png) 27 fill repeat;
     border-style: solid;
     border-width: 0px 3px 0px 0px;
+}
+
+.menu-table-cell a:last-of-type {
+    border: transparent;
 }
 
 .menu-table-cell a:hover {
