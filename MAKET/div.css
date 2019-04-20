@@ -198,7 +198,6 @@ video[src$=".mp4"] {
 
     .second-left .line-block {
         background: black;
-        padding: 10px;
         margin-right: 5px;
         width: 32%;
         display: flex;
@@ -208,6 +207,9 @@ video[src$=".mp4"] {
 
     .second-left .line-block div {
         font-size: 14px;
+    }
+    .second-left .line-block .title {
+        padding: 0 10px 0 10px;
     }
 
     .second-left .line-block video {
