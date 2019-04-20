@@ -1,0 +1,286 @@
+body {
+    background: url('iron1.jpg') 50% 0 no-repeat #000;
+    margin: 0px;
+    background-size: 70%;
+}
+
+div {
+    padding: 0px;
+    font-size: 17px;
+    text-align: left;
+    color: white;
+}
+
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#leftSidebar {
+    background-color: rgba(43, 43, 43, 1);
+    color: white;
+    width: 300px;
+    height: auto;
+    display: table-cell;
+}
+
+#main {
+    background-color: rgba(8, 7, 7, 0.8);
+    height: auto;
+    margin-left: 10px;
+    display: table-cell;
+}
+
+#footer {
+    color: darkgray;
+    font-size: 13px;
+    height: auto;
+    margin: 0;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+#all {
+    width: 70%;
+    margin: auto;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.dop {
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 77px;
+    margin-bottom: 20px;
+}
+
+.block {
+    min-height: 400px;
+}
+
+A {
+    color: white;
+}
+
+A:visited {
+    color: red;
+}
+
+A:active {
+    color: slategray;
+}
+
+img {
+    margin-right: 10px;
+    width: 210px;
+    float: left;
+}
+
+h3 {
+    height: 40px;
+    background-color: rgba(8, 7, 7, 0.8);
+    width: 170px;
+    margin: 0 0 0 300px;
+}
+
+video[src$=".mp4"] {
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: black;
+        margin: 0%;
+        padding: 0%;
+    }
+    div {
+        text-align: left;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    h3 {
+        margin: 0 0 0 300px;
+    }
+    h4 {
+        text-align: center;
+    }
+    #all {
+        width: 100%
+    }
+    .hidden-menu {
+        display: block;
+        position: fixed;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 200px;
+        background-color: black;
+        height: 100%;
+        top: 0;
+        left: -200px;
+        transition: left .2s;
+        z-index: 2;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .btn-menu {
+        color: #fff;
+        background-color: #666;
+        padding: 5px;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        cursor: pointer;
+        transition: left .23s;
+        z-index: 3;
+        width: 25px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .btn-menu span {
+        display: block;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px 0 0;
+        transition: all .1s linear .23s;
+        position: relative;
+    }
+    .btn-menu span.first {
+        margin-top: 0;
+    }
+    .hidden-menu-ticker:checked~.btn-menu {
+        left: 160px;
+    }
+    .hidden-menu-ticker:checked~.hidden-menu {
+        left: 0;
+    }
+    .hidden-menu-ticker:checked~.btn-menu span.first {
+        -webkit-transform: rotate(45deg);
+        top: 10px;
+    }
+    .hidden-menu-ticker:checked~.btn-menu span.second {
+        opacity: 0;
+    }
+    .hidden-menu-ticker:checked~.btn-menu span.third {
+        -webkit-transform: rotate(-45deg);
+        top: -10px;
+    }
+}
+
+@media (max-width: 420px) {
+    ul {
+        width: 100%;
+    }
+    h4 {
+        text-align: center;
+    }
+    #all {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #header {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        background: #000;
+    }
+    #leftSidebar {
+        background: black;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: table;
+    }
+    .second-left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .second-left .line-block {
+        background: black;
+        margin-right: 5px;
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .second-left .line-block div {
+        font-size: 14px;
+    }
+    .second-left .line-block .title {
+        padding: 0 10px 0 10px;
+    }
+    .second-left .line-block video {
+        width: 99%;
+        padding-top: 5px;
+        vertical-align: bottom;
+    }
+    .second-left .line-block .dop {
+        display: none;
+    }
+    #main {
+        background-color: rgba(8, 7, 7, 0.8);
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        clear: both;
+    }
+    .block::before {
+        content: "Смотреть новинки онлайн";
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #footer {
+        color: darkgray;
+        font-size: 10px;
+        height: auto;
+        margin: 0;
+        clear: both;
+        width: 100%;
+        position: relative;
+    }
+    .dop {
+        color: darkgray;
+        font-size: 13px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .block {
+        min-height: 400px;
+    }
+    A {
+        color: white;
+    }
+    A:visited {
+        color: red;
+    }
+    A:active {
+        color: slategray;
+    }
+    img {
+        margin-right: 10px;
+        width: 100%;
+        float: left;
+    }
+    h3 {
+        display: none;
+    }
+    video[src$=".mp4"] {
+        width: 99%;
+        padding-top: 5px;
+        vertical-align: bottom;
+    }
+}
