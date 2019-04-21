@@ -338,6 +338,11 @@ video[src$=".mp4"] {
     .slides .slide .dop {
         display: none;
     }
+
+    #footer {
+        width: 98%;
+        margin: 0 1% 0 1%;
+    }
 }
 
 @media (max-width: 420px) {
