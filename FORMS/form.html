@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Формы html</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" charset="utf-8"
+        content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+</head>
+
+<body>
+	<form>
+		<div><label class="title">Для публикации вашей статьи, заполните пожалуйста следующую форму:</label>
+		</div>
+		<div class="label-input">
+			<label class="label">Название статьи:</label>
+			<input type="text" placeholder="Подсказывающий текст">			
+		</div>
+		<div>
+			<label class="label">Рубрика:</label>
+			<select>
+				<option>программирование</option>
+				<option>тестирование</option>
+				<option>дизайн</option>
+			</select>
+		</div>
+		<div>
+			<label class="label">Публикация:</label>
+			<ul>
+				<li>
+					<label><input type="radio" name="publish" checked>на сайте</label>
+				</li>
+				<li>
+					<label><input type="radio" name="publish">в журнале</label>
+				</li>
+				<li>
+					<label><input type="radio" name="publish">на сайте и в журнале</label>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<label class="label">Разрешить комментарии:</label>
+			<input type="checkbox"checked>
+		</div>
+		<div>
+			<label class="title">Текс статьи:</label>
+			<textarea type="text" placeholder="Текст статьи"></textarea>
+		</div>
+		<div>
+			<button type="submit">Опубликовать</button>
+		</div>
+	</form>
+</body>
+
+</html>

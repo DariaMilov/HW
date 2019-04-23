@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+div {
+    margin: 20px;
+    overflow: hidden;
+}
+
+form {
+    font-family: Arial;
+    font-size: 17px;
+    display: inline-block;
+    background-color: #37393c;
+    color: white;
+    width: 100%;
+}
+
+label {
+    line-height: 18px;
+    color: #b6daff;
+    width: 500px;
+    float: left;
+}
+
+button {
+    width: auto;
+    height: 30px;
+}
+
+.title {
+    width: 100%;
+}
+
+.label-input {
+    display: table;
+    width: -webkit-fill-available;
+}
+
+.label-input label {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.label {
+    width: 205px;
+}
+
+select {
+    width: 200px;
+    height: auto;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-left: 0;
+}
+
+input[type=radio], input[type=checkbox] {
+    vertical-align: text-top;
+    margin-left: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    float: left;
+}
+
+ul li label {
+    padding: 0;
+    width: auto;
+    color: #efefef;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .label-input label {
+        display: inline; 
+    }
+
+    input[type=text] {
+        margin-top: 5px;
+    }
+
+    div .label {
+        float: none;
+    }
+
+    select {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    ul li, ul li label {
+        float: none;
+    }
+}
