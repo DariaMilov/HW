@@ -32,8 +32,8 @@ button {
     width: 30em;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
+    -webkit-animation: type 10s steps(50, end);
+    animation: type 6.5s steps(65, end), blink-caret .10s step-end infinite;
 }
 
 @keyframes type {
@@ -45,12 +45,21 @@ button {
     }
 }
 
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #b6daff
+    }
+}
+
 input:invalid {
     border: 2px solid palevioletred;
 }
 
 input:valid {
-    border: 2px solid black;
+    border: 2px solid #37393c;
 }
 
 .title {
@@ -81,6 +90,11 @@ textarea {
     width: 100%;
     height: auto;
     margin-top: 5px;
+}
+
+input, textarea, select {
+    background-color: #37393c;
+    color: white;
 }
 
 input[type=text] {
