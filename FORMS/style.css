@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+    margin: 0;    
+    background-color: black;
+    padding: 20px;
 }
 
 div {
@@ -95,6 +97,7 @@ textarea {
 input, textarea, select {
     background-color: #37393c;
     color: white;
+    box-sizing : border-box;
 }
 
 input[type=text] {
