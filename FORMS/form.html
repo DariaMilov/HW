@@ -10,11 +10,11 @@
 
 <body>
 	<form>
-		<div><label class="title">Для публикации вашей статьи, заполните пожалуйста следующую форму:</label>
+		<div><label class="title css-typing">Для публикации вашей статьи, заполните пожалуйста следующую форму:</label>
 		</div>
 		<div class="label-input">
 			<label class="label">Название статьи:</label>
-			<input type="text" placeholder="Подсказывающий текст">			
+			<input type="text" placeholder="Название должно содержать 1-20 символов" required maxlength="20">			
 		</div>
 		<div>
 			<label class="label">Рубрика:</label>
@@ -44,7 +44,7 @@
 		</div>
 		<div>
 			<label class="title">Текс статьи:</label>
-			<textarea type="text" placeholder="Текст статьи"></textarea>
+			<textarea type="text" placeholder="Текст статьи не более 100 символов" maxlength="100"></textarea>
 		</div>
 		<div>
 			<button type="submit">Опубликовать</button>

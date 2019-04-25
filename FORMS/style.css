@@ -28,6 +28,31 @@ button {
     height: 30px;
 }
 
+.css-typing {
+    width: 30em;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+input:invalid {
+    border: 2px solid palevioletred;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
 .title {
     width: 100%;
 }
@@ -88,23 +113,26 @@ ul li label {
 
 @media only screen and (max-width: 768px) {
     .label-input label {
-        display: inline; 
+        display: inline;
     }
-
     input[type=text] {
         margin-top: 5px;
     }
-
     div .label {
         float: none;
     }
-
     select {
         width: 100%;
         margin-top: 5px;
     }
-
     ul li, ul li label {
         float: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .css-typing {
+        -webkit-animation: type 5s steps(50, end);
+        animation: none;
     }
 }
