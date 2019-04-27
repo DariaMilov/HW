@@ -5,7 +5,7 @@ body {
 }
 
 div {
-    margin: 20px;
+   padding: 10px;
     overflow: hidden;
 }
 
@@ -81,6 +81,7 @@ input:valid {
 
 .label {
     width: 205px;
+
 }
 
 select {
@@ -91,7 +92,6 @@ select {
 textarea {
     width: 100%;
     height: auto;
-    margin-top: 5px;
 }
 
 input, textarea, select {
@@ -102,12 +102,11 @@ input, textarea, select {
 
 input[type=text] {
     width: 100%;
-    margin-left: 0;
+    display: table-cell;
 }
 
 input[type=radio], input[type=checkbox] {
     vertical-align: text-top;
-    margin-left: 0;
 }
 
 ul {
@@ -125,7 +124,6 @@ ul li label {
     padding: 0;
     width: auto;
     color: #efefef;
-    margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,6 +135,9 @@ ul li label {
     }
     div .label {
         float: none;
+        width: 100%;
+        display: block;
+
     }
     select {
         width: 100%;

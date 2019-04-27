@@ -9,42 +9,42 @@
 </head>
 
 <body>
-	<form>
+	<form method="get" action="http://fe.it-academy.by/TestForm.php" target="_blank">
 		<div><label class="title css-typing">Для публикации вашей статьи, заполните пожалуйста следующую форму:</label>
 		</div>
 		<div class="label-input">
-			<label class="label">Название статьи:</label>
-			<input type="text" placeholder="Название должно содержать 1-20 символов" required maxlength="20">			
+			<label class="label" for="name">Название статьи:</label>
+			<input type="text" placeholder="Название должно содержать 1-20 символов" required maxlength="20" name="name">			
 		</div>
 		<div>
-			<label class="label">Рубрика:</label>
-			<select>
-				<option>программирование</option>
-				<option>тестирование</option>
-				<option>дизайн</option>
+			<label class="label" for="heading">Рубрика:</label>
+			<select name="heading">
+				<option value="1">программирование</option>
+				<option value="2">тестирование</option>
+				<option value="3">дизайн</option>
 			</select>
 		</div>
 		<div>
-			<label class="label">Публикация:</label>
+			<label class="label" for="publish">Публикация:</label>
 			<ul>
 				<li>
-					<label><input type="radio" name="publish" checked>на сайте</label>
+					<label><input type="radio" name="publish" value="1" checked>на сайте</label>
 				</li>
 				<li>
-					<label><input type="radio" name="publish">в журнале</label>
+					<label><input type="radio" name="publish" value="2">в журнале</label>
 				</li>
 				<li>
-					<label><input type="radio" name="publish">на сайте и в журнале</label>
+					<label><input type="radio" name="publish" value="3">на сайте и в журнале</label>
 				</li>
 			</ul>
 		</div>
 		<div>
-			<label class="label">Разрешить комментарии:</label>
-			<input type="checkbox"checked>
+			<label class="label" for="comments">Разрешить комментарии:</label>
+			<input type="checkbox" name="comments" checked>
 		</div>
 		<div>
-			<label class="title">Текс статьи:</label>
-			<textarea type="text" placeholder="Текст статьи не более 100 символов" maxlength="100"></textarea>
+			<label class="title" for="body">Текс статьи:</label>
+			<textarea type="text" placeholder="Текст статьи не более 100 символов" maxlength="100" name="body"></textarea>
 		</div>
 		<div>
 			<button type="submit">Опубликовать</button>
